@@ -1,1 +1,11 @@
+//Ejercicio 2: Diseña un algoritmo que imprima los números impares entre un número dado por el usuario y los siguientes 50 números
 
+let numero = 1;
+let numeroSuma = numero + 50;
+console.log(numero)
+while(numero !== numeroSuma - 1){
+  numero = numero + 1;
+  if(numero % 2 !== 0){
+  console.log(numero)
+}
+}
