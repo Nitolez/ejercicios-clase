@@ -1,2 +1,10 @@
 // Ejercicio 1: Diseña un algoritmo que cuente las veces que aparece una determinada letra en una frase
 
+let miFrase = 'Hola soy Antonia';
+let  letraElegida = 'a';
+let contador = 0
+for (let i = 0; i < miFrase.length; i++) {
+    if (miFrase[i] === letraElegida) {
+      contador++;
+    } 
+  } console.log('Tu frase tiene ' + contador + ' letras ' + letraElegida)
