@@ -2,7 +2,7 @@
 
 let numero = 1;
 let numeroSuma = numero + 50;
-console.log("Tu número es " + numero + ")
+console.log("Tu número es " + numero)
 while(numero !== numeroSuma - 1){
   numero = numero + 1;
   if(numero % 2 !== 0){
