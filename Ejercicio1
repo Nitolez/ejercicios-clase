@@ -8,3 +8,20 @@ for (let i = 0; i < miFrase.length; i++) {
       contador++;
     } 
   } console.log('Tu frase tiene ' + contador + ' letras ' + letraElegida)
+
+
+----------------------------------------------------------------------------------------------
+
+//Método como función
+
+let contador = 0
+function contarLetras(miFrase,letraElegida){
+for (let i = 0; i < miFrase.length; i++) {
+    if (miFrase[i].toLowerCase() === letraElegida) {
+      contador++;
+    } 
+  } //console.log('Tu frase tiene ' + contador + ' letras ' + letraElegida)
+    return count;
+}
+const veces = contarLetras("Hola soy amigo de Ana", "a");
+console.log(veces)
