@@ -14,3 +14,14 @@ while(numero !== numeroSuma - 1){
 
 //Modo función
 
+let numeroUsuario = prompt("Ingresa un numero: ");
+function  imprimirImpares(numeroUsuario) {
+  let array = [];
+  for(let i= numeroUsuario; i <= numeroUsuario + 50, i++){
+    if(i % 2 !== 0) {
+        array.push(i)
+        }
+    }
+    return array;
+}
+console.log(imprimirImpares());
