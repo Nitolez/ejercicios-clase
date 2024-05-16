@@ -1,0 +1,18 @@
+/* 1º Solicite al usuario el ingreso por teclado de 3 notas
+2º Saque la media de las notas
+3º Muestre por pantalla
+si la nota es menor que 5 'SUSPENSO'
+si la nota es mayor o igual 5 y menor que 7 'APROBADO'
+si es mayor o igual que 7 y menor o igual que 10 'sobresaliente'\*
+
+const nota1 = prompt("Ingrese aquí su primera nota")
+const nota2 = prompt("Ingrese aquí su segunda nota")
+const nota3 = prompt("Ingrese aquí su tercera nota")
+let media = (nota1 + nota2 + nota3) / 3
+if(media < 5){
+  console.log("SUSPENSO")
+} else if(media >= 5 && media < 7){
+  console.log("APROBADO")
+} else if(media >= 7 && media === 10){
+console.log("SOBRESALIENTE")
+} else console.log("Que hase killo")
