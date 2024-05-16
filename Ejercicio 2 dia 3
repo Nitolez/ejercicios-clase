@@ -1,0 +1,36 @@
+/* Se solicita al usuario que ingrese por teclado 10 números, el programa devolverá:
+1º Cuantos son positivos
+2º Cuantos son negativos
+3º Cuantos son pares */
+
+function procesarNumeros() {
+    let positivos = 0;
+    let negativos = 0;
+    let pares = 0;
+
+    for (let i = 0; i < 10; i++) {
+        let numero = parseFloat(prompt(`Ingrese el número ${i + 1}:`));
+
+        if (isNaN(numero)) {
+            alert("Por favor, ingrese un número válido.");
+            i--; 
+            continue;
+        }
+
+        if (numero > 0) {
+            positivos++;
+        } else if (numero < 0) {
+            negativos++;
+        }
+
+        if (numero % 2 === 0) {
+            pares++;
+        }
+    }
+
+    console.log(`Positivos: ${positivos}`);
+    console.log(`Negativos: ${negativos}`);
+    console.log(`Pares: ${pares}`);
+}
+
+procesarNumeros();
