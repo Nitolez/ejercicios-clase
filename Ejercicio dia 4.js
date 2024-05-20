@@ -2,16 +2,15 @@
 1º Almacenar todos los números en un array
 2º Almacenar en otro array los números comprendidos entre el 1 y 250
 3º Almacenar en otro array los números comprendidos entre el 251 y 500 */
-
 function almacenarArray () {
     let arrayPrincipal = []
     let arrayPrimeros = []
     let arraySegundos = []
 
-    for(let i = 0; i < 10; i++){
-        let numero = parseFloat(prompt(`Ingrese aquí su número`));
+    for(let i = 1; i <= 10; i++){
+        let numero = parseFloat(prompt(`Ingrese aquí su ${i} número`));
 
-        if (isNaN(numero) || numero > 500 || numero < 0 || numero > 500) {
+        if (isNaN(numero) || numero > 500 || numero < 0 || numero == null) {
             alert ("Inserte un número válido");
             i--;
             continue;
@@ -33,3 +32,5 @@ function almacenarArray () {
 
 }
 almacenarArray();
+
+
