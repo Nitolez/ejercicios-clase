@@ -11,7 +11,7 @@ function almacenarArray () {
     for(let i = 0; i < 10; i++){
         let numero = parseFloat(prompt(`Ingrese aquí su número`));
 
-        if (isNaN(numero) || numero > 500) {
+        if (isNaN(numero) || numero > 500 || numero < 0 || numero > 500) {
             alert ("Inserte un número válido");
             i--;
             continue;
