@@ -1,7 +1,7 @@
 //CATA 1
-const regExp = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{4,19}$/;
+const regExp1 = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{4,19}$/;
 function validPass(password){
-  if(regExp.test(password)){
+  if(regExp1.test(password)){
     return "VALID"
   } else {return "INVALID"}
 }
@@ -13,10 +13,10 @@ $: Fin de la cadena.*/
 
 //CATA 2
 
-const regExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+const regExp2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
 
 function password(str) {
-  if(regExp.test(str)){
+  if(regExp2.test(str)){
     return true
     } else {
       return false
