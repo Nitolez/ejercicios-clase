@@ -29,7 +29,3 @@ function password(str) {
 (?=.*\d): Asegura que haya al menos un número.
 .{8,}: Asegura que la cadena tenga al menos 8 caracteres alfanuméricos.
 $: Fin de la cadena.*/
-
-
-//CATA 3
-
